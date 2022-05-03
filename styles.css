@@ -2,15 +2,22 @@ body{
     margin: 0;
 }
 
-div>div {
+.gridSquares {
     background-color: black;
-    height: 100px;
-    width: 100px;
-    margin: 5px;
+    box-sizing: border-box;   
+}
+
+.gridSquares::before {
+    content: " ";
+    display: block;
 }
 
 #gridContainer {
-    border: 10px solid red;
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 1px;
+    max-height: 500px;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
 }
