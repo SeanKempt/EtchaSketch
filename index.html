@@ -10,14 +10,15 @@
 </head>
 
 <body>
+    <h1>Sketch-a-Etch</h1>
     <div class="rangeContainer">
-        <input type="range" name="squareSlider" id="squareSlider" class="rangeSlider" value="16" min="0" max="64">
-        <output class="rangeSliderValue">0</output>
-        <button for="squareSlider">Set</button>
+        <input type="range" name="squareSlider" id="squareSlider" class="rangeSlider" value="16" min="0" max="100">
+        <output class="rangeSliderValue">16</output>
+        <button for="squareSlider" id="gridButton">Set</button>
     </div>
-    <button type="reset">Clear</button>
+    <button type="reset" id="gridClear">Clear</button>
     <div id="wrapper">
-        <div id="gridContainer"></div>
+        <div class="gridWrapper" id="gridContainer"></div>
     </div>
     <script type="text/javascript" src="/script.js"></script>
 </body>

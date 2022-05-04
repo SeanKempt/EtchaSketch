@@ -13,7 +13,9 @@ body{
     display: block;
 }
 
-
+.rangeSlider {
+    width: 400px;
+}
 
 #gridContainer {
     display: grid;
