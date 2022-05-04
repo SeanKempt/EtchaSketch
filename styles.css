@@ -3,14 +3,17 @@ body{
 }
 
 .gridSquares {
-    background-color: black;
+    background-color: white;
     box-sizing: border-box;   
+    user-select: none;
 }
 
 .gridSquares::before {
     content: " ";
     display: block;
 }
+
+
 
 #gridContainer {
     display: grid;
@@ -20,4 +23,8 @@ body{
     max-height: 500px;
     max-width: 500px;
     aspect-ratio: 1 / 1;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
 }
