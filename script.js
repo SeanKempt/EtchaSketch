@@ -29,6 +29,7 @@ function gridColorChange() {
   }
 }
 createGridDiv(rangeSlider.value);
+
 /* When the set button is clicked the createGridDiv function is run to create a new grid based on the value of the slider */
 let setButton = document.getElementById("gridButton");
 setButton.addEventListener("click", function () {
@@ -38,8 +39,7 @@ setButton.addEventListener("click", function () {
 });
 
 let clearButton = document.getElementById("gridClear"); //add event listener to the clear button to clear the grid when pressed by the end user
-
-//Removes all childen from gridContainer; resets the grid back to original state
+//Removes all squares from gridContainer; resets the grid back to original state before dom manipulation
 function resetGrid() {
   while (gridDivContainer.firstChild) {
     gridDivContainer.removeChild(gridDivContainer.firstChild);
