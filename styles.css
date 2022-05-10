@@ -1,7 +1,33 @@
 body{
     margin: 0;
+    font-family: 'Ubuntu', 'Roboto', sans-serif;
+    background-color: #030301;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 50px;
+    color: #FF4365;
+}
+
+label {
+    color: #FF4365;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+output {
+    color: #FF4365;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.optionsWrapper {
+    display: flex;
+    flex-direction: column;
+
+}
 .gridSquares {
     background-color: white;
     box-sizing: border-box;   
@@ -17,6 +43,12 @@ body{
     width: 400px;
 }
 
+
+.rangeContainer {
+    display: flex;
+    justify-content: center;
+}
+
 #gridContainer {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -25,8 +57,37 @@ body{
     max-height: 500px;
     max-width: 500px;
     aspect-ratio: 1 / 1;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid black;
+    border: 5px solid #FF4365;
+}
+
+#gridButton {
+    margin-left: 20px;
+    background-color: #FF4365; /* Green */
+    border: none;
+    color: #FFFFF3;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+#gridClear {
+    margin-left: 20px;
+    background-color: #FF4365;
+    border: none;
+    color: #FFFFF3;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#gridClear {
+    margin-top: 20px;
+    align-self: center;
 }

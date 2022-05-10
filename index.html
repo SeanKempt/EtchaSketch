@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EtchaSketch</title>
+    <title>SketchaEtch</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>Sketch-a-Etch</h1>
-    <div class="rangeContainer">
-        <input type="range" name="squareSlider" id="squareSlider" class="rangeSlider" value="16" min="0" max="100">
-        <output class="rangeSliderValue">16</output>
-        <button for="squareSlider" id="gridButton">Set</button>
-    </div>
-    <button type="reset" id="gridClear">Clear</button>
+    <main class="optionsWrapper">
+        <div class="rangeContainer">
+            <label for="squareSlider">Grid Size (x * x):</label>
+            <input type="range" name="squareSlider" id="squareSlider" class="rangeSlider" value="16" min="0" max="100">
+            <output class="rangeSliderValue">16</output>
+            <button for="squareSlider" id="gridButton">Set Grid</button>
+        </div>
+        <button type="reset" id="gridClear">Clear Grid</button>
+    </main>
     <div id="wrapper">
         <div class="gridWrapper" id="gridContainer"></div>
     </div>
